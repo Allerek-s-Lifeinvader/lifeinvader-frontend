@@ -3,7 +3,7 @@ import { FaPlusCircle } from 'vue3-icons/fa'
 </script>
 <template>
   <div class="">
-    <div class="caret-transparent w-[7.5rem] mr-[0.7rem] rounded-[5%] overflow-hidden h-full">
+    <div class="caret-transparent w-[7.5rem] mr-[0.7rem] rounded-[8px] overflow-hidden h-full">
       <img
         src="https://li-static.v-rp.pl/upload/photos/2024/11/KGwDgNcblE7oFrxk7UG3_13_774eca11234d3eb08d50abe1f2a0d0e6_avatar.png"
         alt=""
@@ -19,10 +19,10 @@ import { FaPlusCircle } from 'vue3-icons/fa'
     <!-- v-for breaks /Flicking/ so we need to get this rough implementation, we need to think about it in a future. Maybe different library? -->
     <!-- TODO: implement some kind of waiting screen for all images to load -->
     <div class="panel caret-transparent w-[7.5rem]">
-      <img src="https://picsum.photos/1920/1080?random=1" alt="" draggable="false" />
+      <img id="image" src="https://picsum.photos/1920/1080?random=1" alt="" draggable="false" />
     </div>
     <div class="panel caret-transparent w-[7.5rem]">
-      <img src="https://picsum.photos/1920/1080?random=2" alt="" draggable="false" />
+      <img id="image" src="https://picsum.photos/1920/1080?random=2" alt="" draggable="false" />
     </div>
     <div class="panel caret-transparent w-[7.5rem]">
       <img src="https://picsum.photos/1920/1080?random=3" alt="" draggable="false" />
@@ -68,12 +68,16 @@ import { FaPlusCircle } from 'vue3-icons/fa'
 <style>
 .panel {
   margin-right: 0.7rem;
-  border-radius: 5%;
+  border-radius: 8px;
   overflow: hidden;
+  height: 100%;
 }
 
 .panel > img {
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
+
+  border-radius: 8px;
 }
 </style>

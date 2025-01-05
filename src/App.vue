@@ -3,6 +3,8 @@ import './index.css'
 import NavBar from './components/NavBar/NavBar.vue'
 import ToolBar from './components/ToolBar/ToolBar.vue'
 import Reels from './components/Reels/Reels.vue'
+import NewPostEditor from './components/NewPostEditor/NewPostEditor.vue'
+import Post from './components/Post/Post.vue'
 </script>
 
 <template>
@@ -14,9 +16,15 @@ import Reels from './components/Reels/Reels.vue'
         <div id="left-col" class="w-1/6">
           <ToolBar />
         </div>
-        <div id="right-col" class="w-5/6">
+        <div id="right-col" class="w-[40%]">
           <div id="reels" class="h-44 mb-10 flex">
             <Reels />
+          </div>
+          <div id="new-content">
+            <NewPostEditor />
+          </div>
+          <div id="feed">
+            <Post />
           </div>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
           been the industry's standard dummy text ever since the 1500s, when an unknown printer took
