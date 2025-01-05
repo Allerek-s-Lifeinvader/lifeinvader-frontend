@@ -4,7 +4,7 @@ import { FaHome, FaPlus, FaUser, FaComment, FaBell, FaUserFriends, FaSearch } fr
 
 <template>
   <header
-    class="w-full bg-[#212121] fixed top-0 right-0 left-0 h-[48px] flex items-center caret-transparent select-none"
+    class="w-full bg-[#212121] fixed top-0 right-0 left-0 h-[48px] flex items-center caret-transparent select-none z-[2]"
   >
     <nav class="w-full">
       <div class="flex items-center justify-between px-4 mx-auto max-w-[1400px]">
