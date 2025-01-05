@@ -24,15 +24,42 @@
         class="p-0"
       />
     </div>
+    <hr id="post_divider" />
+    <div class="flex flex-row justify-between mt-2">
+      <button
+        class="w-[39%] bg-[rgb(255,255,255,0.1)] rounded-2xl flex text-[13px] text-[#dfdfdf] font-[600] p-2 justify-center align-middle"
+      >
+        <img src="/src/assets/images/post/like.svg" alt="" width="24px" class="mr-2" />
+        <span class="leading-[24px]">Polub to</span>
+      </button>
+      <button
+        class="w-[39%] bg-[rgb(255,255,255,0.1)] rounded-2xl flex text-[13px] text-[#dfdfdf] font-[600] p-2 justify-center align-middle"
+      >
+        <img src="/src/assets/images/post/comment.svg" alt="" width="24px" class="mr-2" />
+        <span class="leading-[24px]">Skomentuj</span>
+      </button>
+      <button
+        class="w-[20%] bg-[rgb(255,255,255,0.1)] rounded-2xl flex text-[13px] text-[#dfdfdf] font-[600] p-2 justify-center align-middle"
+      >
+        <img src="/src/assets/images/post/share.svg" alt="" width="24px" class="mr-2" />
+        <span class="leading-[24px]">Udostępnij</span>
+      </button>
+    </div>
   </div>
 </template>
 
 <style>
 #content-image {
   max-height: 600px;
-  margin-left: -15px;
-  width: calc(100% + 30px);
+  margin-left: -1rem;
+  width: calc(100% + 2rem);
   overflow: hidden;
-  margin-bottom: 5px;
+  margin-bottom: 2rem;
+}
+#post_divider {
+  margin-left: -1rem;
+  width: calc(100% + 2rem);
+  overflow: hidden;
+  border-color: #424242;
 }
 </style>
