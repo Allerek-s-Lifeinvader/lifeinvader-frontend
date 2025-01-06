@@ -1,10 +1,12 @@
+<script lang="ts" setup>
+import CharImage from '../CharImage/CharImage.vue'
+</script>
 <template>
   <form action="" class="bg-[#212121] rounded-md p-3 select-none mb-5">
     <div class="flex mb-2">
-      <img
-        src="https://li-static.v-rp.pl/upload/photos/2024/11/KGwDgNcblE7oFrxk7UG3_13_774eca11234d3eb08d50abe1f2a0d0e6_avatar.png"
-        alt=""
-        class="rounded-full w-[35px]"
+      <CharImage
+        image="https://li-static.v-rp.pl/upload/photos/2024/11/KGwDgNcblE7oFrxk7UG3_13_774eca11234d3eb08d50abe1f2a0d0e6_avatar.png"
+        imageWidth="35px"
       />
       <span id="char_name" class="h-[35px] text-center leading-[35px] ml-2 text-[#e5e5e5]"
         >Oishi Michizane</span

@@ -1,12 +1,15 @@
+<script lang="ts" setup>
+import CharImage from '../CharImage/CharImage.vue'
+</script>
+
 <template>
   <div class="bg-[#212121] rounded-md p-4 pt-6 select-none mb-5 w-full">
     <div class="flex mr-2 mb-5 flex-row">
       <div>
-        <img
-          src="https://li-static.v-rp.pl/upload/photos/2024/11/KGwDgNcblE7oFrxk7UG3_13_774eca11234d3eb08d50abe1f2a0d0e6_avatar.png"
-          alt=""
-          class="rounded-full"
-          width="50px"
+        <CharImage
+          image="https://li-static.v-rp.pl/upload/photos/2024/11/KGwDgNcblE7oFrxk7UG3_13_774eca11234d3eb08d50abe1f2a0d0e6_avatar.png"
+          imageWidth="50px"
+          class="object-cover"
         />
       </div>
       <div>

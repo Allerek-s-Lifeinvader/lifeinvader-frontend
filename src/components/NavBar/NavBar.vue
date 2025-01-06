@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { FaHome, FaPlus, FaUser, FaComment, FaBell, FaUserFriends, FaSearch } from 'vue3-icons/fa'
+import UserPop from './UserPop.vue'
 </script>
 
 <template>
@@ -53,11 +54,7 @@ import { FaHome, FaPlus, FaUser, FaComment, FaBell, FaUserFriends, FaSearch } fr
             <FaBell size="1.2rem" />
           </button>
           <div class="w-8 h-8 bg-gray-500 rounded-full overflow-hidden">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Profile"
-              class="w-full h-full object-cover"
-            />
+            <UserPop />
           </div>
         </div>
       </div>
